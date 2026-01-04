@@ -19,6 +19,6 @@ jobs:
         working-directory: ./backend/apps/python/rest-api
         run: |
           pip install -r requirements-test.txt
-          pylint .
-          pyright .
-          black
+          pylint src
+          pyright src
+          black src
